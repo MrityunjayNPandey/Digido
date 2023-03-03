@@ -1,0 +1,154 @@
+{
+    "posts": [
+      {
+        "title": "JSON SERVER",
+        "author": "foo",
+        "id": 1
+      },
+      {
+        "title": "REACT",
+        "author": "facebook",
+        "id": 2
+      },
+      {
+        "title": "BOOTSTRAP",
+        "author": "css master",
+        "id": 3
+      },
+      {
+        "title": "MEDIUM",
+        "author": "medium",
+        "id": 4
+      }
+    ],
+    "home":{
+        "name": "Grow your business with",
+        "description": "We are a one stop solution for all your digital needs be it Graphic Designing, website designing, interactive portals, digital marketing, social media marketing or any such other works. We have dedicated team of professionals for each activity along with great mentors for them. We aim to provide our client all solutions at one place making the work efficient, economical and timely in a well planned way. With a rich experience in handling the works from development sector we do have experience with industrial and trading organisations/ companies as well.",
+        "img":"https://digidosolutions.com/static/media/img2.66929c17.png"    
+      },
+    "services":[
+      {
+        "title":"Graphic Designing",
+        "description":"We have skilled individuals who can offer the digital support in content creation including videography , photography and video editing services on softwares like adobe premier pro etc.",
+        "img" : "https://digidosolutions.com/static/media/img6.27a44249.png",
+        "btname":"Click Here",
+        "visit":"/GraphicDesigning"
+      },
+      {
+        "title":"Backend Development",
+        "description":"We have skilled individuals who can offer the digital support in content creation including videography , photography and video editing services on softwares like adobe premier pro etc.",
+        "img" : "https://digidosolutions.com/static/media/img2.66929c17.png",
+        "btname":"Click Here",
+        "visit":"/Backend"
+      },
+      {
+        "title":"Android Development",
+        "description":"We have skilled individuals who can offer the digital support in content creation including videography , photography and video editing services on softwares like adobe premier pro etc.",
+        "img" : "https://digidosolutions.com/static/media/img3.c42a0d9f.png",
+        "btname":"Click Here",
+        "visit":"/Android"
+      },
+      {
+        "title":"Database Management",
+        "description":"We have skilled individuals who can offer the digital support in content creation including videography , photography and video editing services on softwares like adobe premier pro etc.",
+        "img" : "https://digidosolutions.com/static/media/img5.b4cd0064.png",
+        "btname":"Click Here",
+        "visit":"/DBM"
+      },
+      {
+        "title":"Frontend Development",
+        "description":"We have skilled individuals who can offer the digital support in content creation including videography , photography and video editing services on softwares like adobe premier pro etc.",
+        "img" : "https://digidosolutions.com/static/media/img5.b4cd0064.png",
+        "btname":"Click Here",
+        "visit":"/Frntend"
+      },
+      {
+        "title":"Digital Marketing",
+        "description":"We have skilled individuals who can offer the digital support in content creation including videography , photography and video editing services on softwares like adobe premier pro etc.",
+        "img" : "https://digidosolutions.com/static/media/img5.b4cd0064.png",
+        "btname":"Click Here",
+        "visit":"/Dgtmkt"
+      },
+      {
+        "title":"Video Creation",
+        "description":"We have skilled individuals who can offer the digital support in content creation including videography , photography and video editing services on softwares like adobe premier pro etc.",
+        "img" : "https://digidosolutions.com/static/media/img5.b4cd0064.png",
+        "btname":"Click Here",
+        "visit":"/Videocreation"
+      }
+    ],
+    "about":{
+      "img":"https://digidosolutions.com/static/media/img3.c42a0d9f.png",
+      "title1":"OUR MISSION",
+      "description1":"To empower and support our clients with latest technology, innovations and providing them the best services while growing together.",
+      "title2":"OUR VISION",
+      "description2":"Building a resilient tomorrow with technology and innovations at their best and providing them best services while growing together."
+    },
+    "ourclients":[
+      {
+        "title":"CSOs, NGOs and consultancy firms",
+        "description":"",
+        "img" : "https://digidosolutions.com/static/media/img5.b4cd0064.png",
+        "btname":"Click Here",
+        "visit":"/NGO"
+      },
+      {
+        "title":"Private Organizations",
+        "description":"",
+        "img" : "https://digidosolutions.com/static/media/img5.b4cd0064.png",
+        "btname":"Click Here",
+        "visit":"/Pvtorg"
+      },
+      {
+        "title":"Government",
+        "description":"",
+        "img" : "https://digidosolutions.com/static/media/img5.b4cd0064.png",
+        "btname":"Click Here",
+        "visit":"/mfgindr"
+      },
+      {
+        "title":"Industries",
+        "description":"",
+        "img" : "https://digidosolutions.com/static/media/img5.b4cd0064.png",
+        "btname":"Click Here",
+        "visit":"mfgindr"
+      },
+      {
+        "title":"Retail",
+        "description":"",
+        "img" : "https://digidosolutions.com/static/media/img5.b4cd0064.png",
+        "btname":"Click Here",
+        "visit":"/mfgindr"
+      },
+      {
+        "title":"Media",
+        "description":"",
+        "img" : "https://digidosolutions.com/static/media/img5.b4cd0064.png",
+        "btname":"Click Here",
+        "visit":"/mfgindr"
+      }
+    ],
+    "footer":{
+      "company":{
+        "phone":"8283056888",
+        "email":"digidopvtltd@gmail.com",
+        "address":"Grand Omaxe, sec-93, NOIDA"
+      },
+      "support":{
+        "link1":"www.digidosolutions.com",
+        "link2":"sddsdsds",
+        "link3":"sdfdsfds"
+      },
+      "services":{
+        "first":"Web-app based solutions",
+        "second":"content based solutions",
+        "third":"Database based solutions"
+      },
+      "links":{
+        "facebook":"facebook.com",
+        "twitter":"twitter.com",
+        "linkedin":"linkedin.com",
+        "instagram":"instagram.com"
+      }
+    }
+  }
