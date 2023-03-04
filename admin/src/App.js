@@ -8,7 +8,7 @@ import { OurClientList, OurClientEdit, OurClientCreate } from "./OurClients";
 import { FooterList, FooterEdit, FooterCreate } from "./Footer";
 import { authProvider } from "./authProvider";
 
-const dataProvider = jsonServerProvider("http://localhost:8000");
+const dataProvider = jsonServerProvider("http://api.digidosolutions.com");
 
 function App() {
   console.log(dataProvider);
