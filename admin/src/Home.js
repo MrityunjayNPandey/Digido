@@ -12,6 +12,7 @@ import {
   Create,
   Show,
   SimpleShowLayout,
+  ImageInput,
 } from "react-admin";
 
 export const HomeList = (props) => (
@@ -22,7 +23,7 @@ export const HomeList = (props) => (
         <TextField source="id" />
         <TextField source="name" />
         <TextField source="description" />
-        <ImageField source="img" />
+        <ImageField source="img.src" />
       </Datagrid>
     </List>
   </>
@@ -34,7 +35,8 @@ export const HomeEdit = (props) => (
       <TextInput source="id" disabled />
       <TextInput source="name" />
       <TextInput source="description" />
-      <ImageField source="img" />
+      <ImageField source="img.src" />
+      <ImageInput source="img" />
       <TextInput source="img" />
     </SimpleForm>
   </Edit>
