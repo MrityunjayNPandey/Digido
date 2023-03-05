@@ -1,6 +1,6 @@
 //src/App.js
 import { Admin, Resource } from "react-admin";
-import jsonServerProvider from "ra-data-json-server";
+import simpleRestProvider from "ra-data-simple-rest";
 import { HomeList, HomeEdit, HomeCreate } from "./Home";
 import { ServiceList, ServiceEdit, ServiceCreate } from "./Services";
 import { AboutList, AboutEdit, AboutCreate } from "./About";
@@ -8,7 +8,7 @@ import { OurClientList, OurClientEdit, OurClientCreate } from "./OurClients";
 import { FooterList, FooterEdit, FooterCreate } from "./Footer";
 import { authProvider } from "./authProvider";
 
-const dataProvider = jsonServerProvider("https://api.digidosolutions.com");
+const dataProvider = simpleRestProvider("https://api.digidosolutions.com");
 
 function App() {
   console.log(dataProvider);

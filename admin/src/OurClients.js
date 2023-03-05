@@ -10,12 +10,12 @@ import {
   TextInput,
   Create,
   ImageField,
+  ImageInput,
 } from "react-admin";
 
-export const OurClientList = (props) => ( 
+export const OurClientList = (props) => (
   <List {...props}>
     <Datagrid rowClick="edit">
-      <TextField source="id" />
       <TextField source="title" />
       <TextField source="description" />
       <TextField source="visit" />
@@ -33,7 +33,6 @@ export const OurClientEdit = (props) => (
       <TextInput source="description" />
       <TextInput source="visit" />
       <ImageField source="img" />
-      <TextInput source="img" />
       <TextInput source="btname" />
     </SimpleForm>
   </Edit>
@@ -46,7 +45,6 @@ export const OurClientCreate = (props) => (
       <TextInput source="description" />
       <TextInput source="visit" />
       <ImageField source="img" />
-      <TextInput source="img" />
       <TextInput source="btname" />
     </SimpleForm>
   </Create>

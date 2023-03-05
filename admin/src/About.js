@@ -9,6 +9,7 @@ import {
   TextInput,
   Create,
   ImageField,
+  ImageInput,
 } from "react-admin";
 
 export const AboutList = (props) => (
@@ -32,11 +33,10 @@ export const AboutEdit = (props) => (
     <SimpleForm>
       <TextInput source="id" disabled />
       <TextInput source="title1" />
-      <TextInput source="title2" />
       <TextInput source="description1" />
+      <TextInput source="title2" />
       <TextInput source="description2" />
       <ImageField source="img" />
-      <TextInput source="img" />
     </SimpleForm>
   </Edit>
 );
@@ -44,6 +44,7 @@ export const AboutEdit = (props) => (
 export const AboutCreate = (props) => (
   <Create {...props}>
     <SimpleForm>
+      <TextInput source="id" disabled />
       <TextInput source="title1" />
       <TextInput source="title2" />
       <TextInput source="description1" />

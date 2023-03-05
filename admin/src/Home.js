@@ -20,7 +20,7 @@ export const HomeList = (props) => (
     <h1>Only renders the 1st Item</h1>
     <List {...props}>
       <Datagrid {...props} rowClick="edit">
-        <TextField source="id" />
+        <TextField source="_id" />
         <TextField source="name" />
         <TextField source="description" />
         <ImageField source="img.src" />
@@ -37,7 +37,6 @@ export const HomeEdit = (props) => (
       <TextInput source="description" />
       <ImageField source="img.src" />
       <ImageInput source="img" />
-      <TextInput source="img" />
     </SimpleForm>
   </Edit>
 );
@@ -45,10 +44,11 @@ export const HomeEdit = (props) => (
 export const HomeCreate = (props) => (
   <Create {...props}>
     <SimpleForm>
+      <TextInput source="id" disabled />
       <TextInput source="name" />
       <TextInput source="description" />
-      <ImageField source="img" />
-      <TextInput source="img" />
+      <ImageField source="img.src" />
+      <ImageInput source="img" />
     </SimpleForm>
   </Create>
 );

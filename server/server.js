@@ -1,23 +1,48 @@
-const jsonServer = require("json-server");
-const clone = require("clone");
-const data = require("./db.json");
+const express = require("express");
+const app = express();
+const cors = require("cors");
+const bodyParser = require("body-parser");
+const mongoose = require("mongoose");
 
-const isProductionEnv = process.env.NODE_ENV === "production";
-const server = jsonServer.create();
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
-const middlewares = jsonServer.defaults();
-
-server.use(middlewares);
-
-server.use((req, res, next) => {
-  if (req.path !== "/") router.db.setState(clone(data));
+app.use(function (req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header(
+    "Access-Control-Allow-Headers",
+    "Content-Type, X-Requested-With, Origin"
+  );
+  res.header(
+    "Access-Control-Allow-Methods",
+    "GET, POST, PUT, PATCH, DELETE, OPTIONS"
+  );
+  res.header("Access-Control-Expose-Headers", "Content-Range");
+  res.header("Content-Range", "bytes : 0-9/*");
   next();
 });
 
-server.use(router);
-server.listen(process.env.PORT || 8000, () => {
-  console.log("JSON Server is running");
-});
+app.use(
+  cors({
+    credentials: true,
+    origin: true,
+  })
+);
+app.options("*", cors());
 
-// Export the Server API
-module.exports = server;
+mongoose
+  .connect(
+    "mongodb+srv://pandeymrityunjay796:utTKQ83GMKwapnHw@digido.h5l7xl6.mongodb.net/?retryWrites=true&w=majority",
+    { useNewUrlParser: true, useUnifiedTopology: true }
+  )
+  .then(() => console.log("mongodb is connected"))
+  .catch((e) => console.log(e));
+
+require("./controllers/controller")(app);
+
+app.listen(process.env.PORT || 8000, () =>
+  console.log("Server is running @8000 ...")
+);
+
+// Export the Express API
+module.exports = app;
