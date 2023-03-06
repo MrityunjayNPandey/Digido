@@ -1,5 +1,5 @@
 //src/App.js
-import { Admin, Resource } from "react-admin";
+import { Admin, fetchUtils, Resource } from "react-admin";
 import simpleRestProvider from "ra-data-simple-rest";
 import { HomeList, HomeEdit, HomeCreate } from "./Home";
 import { ServiceList, ServiceEdit, ServiceCreate } from "./Services";
@@ -8,7 +8,11 @@ import { OurClientList, OurClientEdit, OurClientCreate } from "./OurClients";
 import { FooterList, FooterEdit, FooterCreate } from "./Footer";
 import { authProvider } from "./authProvider";
 
-const dataProvider = simpleRestProvider("https://api.digidosolutions.com");
+const dataProvider = simpleRestProvider(
+  "https://api.digidosolutions.com",
+  fetchUtils.fetchJson,
+  "X-Total-Count"
+);
 
 function App() {
   console.log(dataProvider);

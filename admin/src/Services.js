@@ -18,9 +18,9 @@ export const ServiceList = (props) => (
     <Datagrid rowClick="edit">
       <TextField source="title" />
       <TextField source="description" />
+      <TextField source="btname" />
       <TextField source="visit" />
       <ImageField source="img" />
-      <TextField source="btname" />
     </Datagrid>
   </List>
 );
@@ -31,8 +31,15 @@ export const ServiceEdit = (props) => (
       <TextInput source="title" />
       <TextInput source="description" />
       <TextInput source="visit" />
-      <ImageField source="img" />
       <TextInput source="btname" />
+      <ImageField source="img" />
+      <p>Get your GOOGLE_DRIVE_IMAGE_ID from drive shared link</p>
+      <p>***/d/YOUR_GOOGLE_DRIVE_IMAGE_ID/***</p>
+      <p>And use the link below to add img url</p>
+      <p>
+        https://drive.google.com/uc?export=view&id=INSERT_HERE_YOUR_GOOGLE_DRIVE_IMAGE_ID
+      </p>
+      <TextInput source="img" />
     </SimpleForm>
   </Edit>
 );
@@ -43,8 +50,14 @@ export const ServiceCreate = (props) => (
       <TextInput source="title" />
       <TextInput source="description" />
       <TextInput source="visit" />
-      <ImageField source="img" />
       <TextInput source="btname" />
+      <p>Get your GOOGLE_DRIVE_IMAGE_ID from drive shared link</p>
+      <p>***/d/YOUR_GOOGLE_DRIVE_IMAGE_ID/***</p>
+      <p>And use the link below to add img url</p>
+      <p>
+        https://drive.google.com/uc?export=view&id=INSERT_HERE_YOUR_GOOGLE_DRIVE_IMAGE_ID
+      </p>
+      <TextInput source="img" />
     </SimpleForm>
   </Create>
 );

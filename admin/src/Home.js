@@ -23,7 +23,7 @@ export const HomeList = (props) => (
         <TextField source="_id" />
         <TextField source="name" />
         <TextField source="description" />
-        <ImageField source="img.src" />
+        <ImageField source="img" />
       </Datagrid>
     </List>
   </>
@@ -35,8 +35,14 @@ export const HomeEdit = (props) => (
       <TextInput source="id" disabled />
       <TextInput source="name" />
       <TextInput source="description" />
-      <ImageField source="img.src" />
-      <ImageInput source="img" />
+      <ImageField source="img" />
+      <p>Get your GOOGLE_DRIVE_IMAGE_ID from drive shared link</p>
+      <p>***/d/YOUR_GOOGLE_DRIVE_IMAGE_ID/***</p>
+      <p>And use the link below to add img url</p>
+      <p>
+        https://drive.google.com/uc?export=view&id=INSERT_HERE_YOUR_GOOGLE_DRIVE_IMAGE_ID
+      </p>
+      <TextInput source="img" />
     </SimpleForm>
   </Edit>
 );
@@ -47,8 +53,13 @@ export const HomeCreate = (props) => (
       <TextInput source="id" disabled />
       <TextInput source="name" />
       <TextInput source="description" />
-      <ImageField source="img.src" />
-      <ImageInput source="img" />
+      <p>Get your GOOGLE_DRIVE_IMAGE_ID from drive shared link</p>
+      <p>***/d/YOUR_GOOGLE_DRIVE_IMAGE_ID/***</p>
+      <p>And use the link below to add img url</p>
+      <p>
+        https://drive.google.com/uc?export=view&id=INSERT_HERE_YOUR_GOOGLE_DRIVE_IMAGE_ID
+      </p>
+      <TextInput source="img" />
     </SimpleForm>
   </Create>
 );

@@ -89,7 +89,7 @@ module.exports = function (app) {
   );
   app.put("/Services/:bid", (req, res) =>
     serviceService
-      .updateBook(req.params["bid"], req.body)
+      .updateService(req.params["bid"], req.body)
       .then((status) => res.send(status))
   );
 

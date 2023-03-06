@@ -17,8 +17,8 @@ app.use(function (req, res, next) {
     "Access-Control-Allow-Methods",
     "GET, POST, PUT, PATCH, DELETE, OPTIONS"
   );
-  res.header("Access-Control-Expose-Headers", "Content-Range");
-  res.header("Content-Range", "bytes : 0-9/*");
+  res.header("Access-Control-Expose-Headers", "X-Total-Count");
+  res.header("X-Total-Count", 500);
   next();
 });
 
@@ -28,6 +28,7 @@ app.use(
     origin: true,
   })
 );
+
 app.options("*", cors());
 
 mongoose

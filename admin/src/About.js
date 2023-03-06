@@ -37,6 +37,13 @@ export const AboutEdit = (props) => (
       <TextInput source="title2" />
       <TextInput source="description2" />
       <ImageField source="img" />
+      <p>Get your GOOGLE_DRIVE_IMAGE_ID from drive shared link</p>
+      <p>***/d/YOUR_GOOGLE_DRIVE_IMAGE_ID/***</p>
+      <p>And use the link below to add img url</p>
+      <p>
+        https://drive.google.com/uc?export=view&id=INSERT_HERE_YOUR_GOOGLE_DRIVE_IMAGE_ID
+      </p>
+      <TextInput source="img" />
     </SimpleForm>
   </Edit>
 );
@@ -49,6 +56,12 @@ export const AboutCreate = (props) => (
       <TextInput source="title2" />
       <TextInput source="description1" />
       <TextInput source="description2" />
+      <p>Get your GOOGLE_DRIVE_IMAGE_ID from drive shared link</p>
+      <p>***/d/YOUR_GOOGLE_DRIVE_IMAGE_ID/***</p>
+      <p>And use the link below to add img url</p>
+      <p>
+        https://drive.google.com/uc?export=view&id=INSERT_HERE_YOUR_GOOGLE_DRIVE_IMAGE_ID
+      </p>
       <TextInput source="img" />
     </SimpleForm>
   </Create>
