@@ -33,11 +33,9 @@ export const ServiceEdit = (props) => (
       <TextInput source="visit" />
       <TextInput source="btname" />
       <ImageField source="img" />
-      <p>Get your GOOGLE_DRIVE_IMAGE_ID from drive shared link</p>
-      <p>***/d/YOUR_GOOGLE_DRIVE_IMAGE_ID/***</p>
-      <p>And use the link below to add img url</p>
       <p>
-        https://drive.google.com/uc?export=view&id=INSERT_HERE_YOUR_GOOGLE_DRIVE_IMAGE_ID
+        Upload your image on imagekit.io and then update the img field with the
+        url of the uploaded image.
       </p>
       <TextInput source="img" />
     </SimpleForm>
@@ -51,11 +49,9 @@ export const ServiceCreate = (props) => (
       <TextInput source="description" />
       <TextInput source="visit" />
       <TextInput source="btname" />
-      <p>Get your GOOGLE_DRIVE_IMAGE_ID from drive shared link</p>
-      <p>***/d/YOUR_GOOGLE_DRIVE_IMAGE_ID/***</p>
-      <p>And use the link below to add img url</p>
       <p>
-        https://drive.google.com/uc?export=view&id=INSERT_HERE_YOUR_GOOGLE_DRIVE_IMAGE_ID
+        Upload your image on imagekit.io and then update the img field with the
+        url of the uploaded image.
       </p>
       <TextInput source="img" />
     </SimpleForm>
