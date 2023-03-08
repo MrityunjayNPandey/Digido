@@ -16,27 +16,27 @@ export const authProvider = (type, params) => {
       username == "digidosolutions.com" &&
       password == "digidosolutions.com"
     ) {
-      localStorage.setItem("username", username);
+      sessionStorage.setItem("username", username);
       return Promise.resolve();
     }
   }
   // when a user tries to logout
   if (type === AUTH_LOGOUT) {
-    localStorage.removeItem("username");
+    sessionStorage.removeItem("username");
     return Promise.resolve();
   }
   // when the API throws an error
   if (type === AUTH_ERROR) {
     const { status } = params;
     if (status === 401 || status === 403) {
-      localStorage.removeItem("username");
+      sessionStorage.removeItem("username");
       return Promise.reject();
     }
     return Promise.resolve();
   }
   // when a user navigates to a new location
   if (type === AUTH_CHECK) {
-    return localStorage.getItem("username")
+    return sessionStorage.getItem("username")
       ? Promise.resolve()
       : Promise.reject();
   }
